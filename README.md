@@ -6,4 +6,4 @@ Firstly, I went through the process of creating a repository, utilising GitHub t
 
 After this I began building the website's structure using HTML. I first looked at my Design Concept created for my previous assessment task, in which I was tasked in designing the possible layout for this tracking site, seen here:
 
-![High-Fidelity Site Design](doc-images/High Fidelity.png)
+![High-Fidelity Site Design](/doc-images/High%20Fidelity.png)
