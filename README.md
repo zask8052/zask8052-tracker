@@ -7,3 +7,7 @@ Firstly, I went through the process of creating a repository, utilising GitHub t
 After this I began building the website's structure using HTML. I first looked at my Design Concept created for my previous assessment task, in which I was tasked in designing the possible layout for this tracking site, seen here:
 
 ![High-Fidelity Site Design](/doc-images/High%20Fidelity.png)
+
+In this design, I chose to utilise a number of various data models, which I aimed to include this website. These data models included:
+
+![High-Fidelity Site Design](/doc-images/data-model.png)
