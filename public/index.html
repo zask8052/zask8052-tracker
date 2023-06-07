@@ -15,11 +15,15 @@
     <header><h1>Your Diary</h1></header>
     <form id="taskform">
       <div class="form-row">
+        <div class="inputTitle">
+        <div class="rectangleTitle"></div>
         <div class="titleFont">
         <label for="gameTitle">Game Title</label> </div>
-        <input type="text" name="gameTitle" id="gameTitle" required="true" />
+        <input type="text" name="gameTitle" id="gameTitle" required="true" /> </div>
       </div>
       <div class="form-row">
+        <div class="selectPlatform">
+        <div class="rectanglePlatform"></div>
         <div class="platformFont">
         <label for="gamePlatform">What Platform?</label> </div>
         <select name="gamePlatform" id="gamePlatform" required="true">
@@ -29,14 +33,17 @@
           <option value="Nintendo">Nintendo</option>
           <option value="PC">PC</option>
           <option value="Virtual Reality">Virtual Reality</option>
-        </select>
+        </select> </div>
       </div>
       <div class="form-row">
+        <div class="inputHours">
+        <div class="rectangleHours"></div>
         <div class="hoursFont">
         <label for="gameHours">Hours Played?</label> </div>
-        <input type="number" name="gameHours" id="gameHours" required="true" />
+        <input type="number" name="gameHours" id="gameHours" required="true" /> </div>
       </div>
       <div class="form-row">
+        <div class="rectangleRating"></div>
         <div class="starRating">
       <label for="starRating">Rating</label> </div>
         <div class="gameRating">
@@ -48,25 +55,31 @@
         </div>
       </div>
       <div class="form-row">
+        <div class="selectReplay">
+        <div class="rectangleReplay"></div>
         <div class="replayFont">
         <label for="gameReplay">Replayed?</label> </div>
         <select name="gameReplay" id="gameReplay" required="true">
           <option value="">Select an option</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
-        </select>
+        </select> </div>
       </div>
       <div class="form-row">
+        <div class="selectLike">
+        <div class="rectangleLike"></div>
         <div class="likeFont">
         <label for="gameLike">Like/Dislike?</label> </div>
         <select name="gameLike" id="gameLike" required="true">
           <option value="">Select an option</option>
           <option value="Like">Like</option>
           <option value="Dislike">Dislike</option>
-        </select>
+        </select> </div>
       </div>
       <div class="form-row">
-        <input type="submit"/>
+        <div class="inputSubmit">
+        <div class="rectangleSubmit"></div>
+        <input type="submit"/> </div>
       </div>
     </form>
   

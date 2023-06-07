@@ -15,16 +15,15 @@ header > h1 {
 form {
   font-family: 'Fraunces', serif;
   max-width: 50%;
+  height: 370px;
   margin: 0 auto;
   border: 2px solid grey;
   padding: 2em 1em;
   position:relative; left: 23%;
-  
 }
                 
 .form-row {
   display: flex;
-  /* justify-content: flex-end; */
   padding: .5em;
 }
                 
@@ -47,35 +46,150 @@ font-family: 'Fraunces', serif;
 /* Game Title */
 .titleFont label {
 font-size: 30px;
+color: #ffffff;
 padding-right: 1em;
-/* background-color: #b798f0; */
+position: relative; bottom: 20px;
+}
+
+.rectangleTitle {
+width: 100%; 
+height: 75px; 
+background-color: #b798f0; 
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+
+.inputTitle > input {
+padding: .5em;
+max-width: 300px;
+position: absolute; right:50px; top:20px;
+}
+
+.rectanglePlatform {
+width: 100%; 
+height: 100px; 
+background-color: #7ed1fb; 
+position: absolute;
+top: 75px;
+left: 0;
+z-index: -1;
+}
+
+.selectPlatform > select {
+padding: .5em;
+max-width: 300px;
+position: absolute; right:75px; top:105px;
+}
+
+.rectangleHours {
+width: 100%; 
+height: 100px; 
+background-color: #ea5d64; 
+position: absolute;
+top: 175px;
+left: 0;
+z-index: -1;
+}
+
+.inputHours > input {
+padding: .5em;
+max-width: 300px;
+position: absolute; right:50px; top:210px;
+}
+
+.rectangleRating {
+width: 50%; 
+height: 112px; 
+background-color: #485df9; 
+position: absolute;
+top: 275px;
+left: 0;
+z-index: -1;
+}
+
+.rectangleReplay {
+width: 75%; 
+height: 112px; 
+background-color: #e298f0; 
+position: absolute;
+top: 275px;
+left: 0;
+z-index: -2;
+}
+
+.selectReplay > select {
+padding: .5em;
+max-width: 300px;
+position: absolute; right: 300px; top: 325px;
+}
+
+.rectangleLike {
+width: 100%; 
+height: 112px;  
+background-color: #f4d79a; 
+position: absolute;
+top: 275px;
+left: 0;
+z-index: -3;
+}
+
+.selectLike > select {
+padding: .5em;
+max-width: 300px;
+position: absolute; right: 50px; top: 325px;
+}
+
+.rectangleSubmit {
+width: 100%; 
+height: 50px; 
+background-color: #9af098; 
+position: absolute;
+top: 385px;
+left: 0;
+z-index: -1;
+}
+
+.inputSubmit > input {
+padding: .5em;
+max-width: 300px;
+position: absolute; right:50%; top:395px;
 }
 
 /* What Platform? */
 .platformFont label {
 font-size: 30px;
+color: #ffffff;
 padding-right: 1em;
+position: absolute; top: 105px;
 }
 
 /* Hours Played? */
 .hoursFont label {
 font-size: 30px;
+color: #ffffff;
 padding-right: 1.6em;
+position: absolute; top: 205px;
 }
 
 /* Replayed? */
 .replayFont label {
-font-size: 30px;
+font-size: 20px;
+color: #ffffff;
 padding-right: 1em;
+position: absolute; top: 290px; right: 295px;
 }
 
 /* Like/Dislike? */
 .likeFont label {
-font-size: 30px;
+font-size: 20px;
+color: #ffffff;
 padding-right: 1em;
+position: absolute; top: 290px; right: 30px;
 }
 
-/* CSS */
+/* Below is the CSS for the star rating on the form, ending at '.starRating' */
 .gameRating {
 display: inline-block;
 }
@@ -88,6 +202,7 @@ display: none;
 font-size: 30px;
 color: #ccc;
 cursor: pointer;
+position: relative; top: 180px; left: 90px;
 }
 
 .gameRating label:before {
@@ -95,19 +210,18 @@ content: '\2605';
 }
 
 .gameRating input:checked ~ label {
-color: #ffdd00; /* Change to your desired color */
+color: #ffdd00;
 }
 
 .gameRating label:hover:before,
 .gameRating label:hover ~ label:before {
 content: '\2605';
-color: #ffdd00; /* Change to your desired color */
+color: #ffdd00;
 }
 
 .starRating {
 font-size: 30px;
-color: #000000;
+color: #ffffff;
 padding: .5em;
-/* padding-right: 70%; --> will use padding to make stars vertical in their own div*/
-/* position:relative; right: 50%; */
+position: relative; top: 167px; left: 65px;
 }
