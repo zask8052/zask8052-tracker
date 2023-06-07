@@ -4,10 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Video Game Diary</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <h1>Zander's Test</h1>
-    <p>This is some test text.</p>
-</body>
-</html>
+    <header><h1>Your Diary</h1></header>
+    <form id="taskform">
+      <div class="form-row">
+        <label for="gameTitle">Game Title</label>
+        <input type="text" name="gameTitle" id="gameTitle" required="true" />
+      </div>
+      <div class="form-row">
+        <label for="gamePlatform">What Platform?</label>
+        <select name="gamePlatform" id="gamePlatform" required="true">
+          <option value="">Select an option</option>
+          <option value="Xbox">Xbox</option>
+          <option value="PlayStation">PlayStation</option>
+          <option value="Nintendo">Nintendo</option>
+          <option value="PC">PC</option>
+          <option value="Virtual Reality">Virtual Reality</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="gameHours">Hours Played?</label>
+        <input type="number" name="gameHours" id="gameHours" required="true" />
+      </div>
+      <div class="form-row">
+        <label for="gameRating">Rating</label>
+        <input type="number" name="gameRating" id="gameRating" required="true" />
+      </div>
+      <div class="form-row">
+        <label for="gameReplay">Replayed?</label>
+        <select name="gameReplay" id="gameReplay" required="true">
+          <option value="">Select an option</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="gameLike">Like/Dislike?</label>
+        <select name="gameLike" id="gameLike" required="true">
+          <option value="">Select an option</option>
+          <option value="Like">Like</option>
+          <option value="Dislike">Dislike</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <input type="submit"/>
+      </div>
+    </form>
+    <!-- <h2>Tasks</h2> -->
+    <ul id="tasklist"></ul>
+    <script src="script.js"></script>
+    </script>
+  </body>
+  
+  </html>

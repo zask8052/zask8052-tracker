@@ -11,3 +11,7 @@ After this I began building the website's structure using HTML. I first looked a
 In this design, I chose to utilise a number of various data models, which I aimed to include in this website. These data models are shown in this table:
 
 ![Data Model](/doc-images/data-model.png)
+
+After my repository was created, I then looked back at the work I had done in-class, namely the task tracker we each created. I based my beginning code off of this project, and began adding and changing things to better suit the form I wanted to create. Due to my original code being in replit, I edited a lot of the beginning code in that program, before sending it over to VSCode. During this process however, I left the 'star rating' component of my form out for now, in order to edit it in VSCode, to record my progress in figuring out how to create it as I commit my changes.
+
+After transferring my code to VSCode, I then had to research how to create a star rating, as seen in my initial design, in a way that could be integrated into a form so that users could pick a rating, and see it displayed next to their other data once submitted.
