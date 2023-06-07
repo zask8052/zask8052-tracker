@@ -17,7 +17,7 @@ form.addEventListener('submit', function(event){
 function displayTask(task) {
   let item = document.createElement('li');
   item.setAttribute('data-id', task.id);
-  item.innerHTML = `<p> <strong>Title: </strong>${task.name} &nbsp; &nbsp; <strong>Platform: </strong> ${task.platform} <br/> <strong>Hours Played: </strong> &nbsp; &nbsp; ${task.time} <br/> <strong>Rating: </strong> &nbsp; &nbsp; ${task.rate} / 5 <br/> <strong> Have I played it before? </strong> &nbsp; &nbsp; ${task.replay} <br/> <strong> Did I like it or dislike it? </strong> &nbsp; &nbsp; ${task.like} </p>`; /* This will determine which components are visibly listed once the form is submitted */
+  item.innerHTML = `<p> <strong>Title: </strong>${task.name} &nbsp; &nbsp; <strong>Platform: </strong> ${task.platform} <br/> <strong>Hours Played: </strong> &nbsp; &nbsp; ${task.time} <br/> <strong>Rating: </strong> &nbsp; &nbsp; ${task.rate} / 5 <br/> <strong> Have I played it before? </strong> &nbsp; &nbsp; ${task.replay} <br/> <strong> Did I lie it or dislike it? </strong> &nbsp; &nbsp; ${task.like} </p>`; /* This will determine which components are visibly listed once the form is submitted */
   tasklistElem.appendChild(item);
   form.reset();
 
