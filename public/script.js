@@ -17,7 +17,7 @@ form.addEventListener('submit', function(event){
 function displayTask(task) {
   let item = document.createElement('li');
   item.setAttribute('data-id', task.id);
-  item.innerHTML = `<p> <strong>${task.name}</strong> <br/> ${task.platform} </p>`; /* This will determine which components are visibly listed once the form is submitted */
+  item.innerHTML = `<p> <strong>${task.name}</strong> <br/> ${task.platform} <br/> ${task.time} <br/> ${task.rate} <br/> ${task.replay} <br/> ${task.like} </p>`; /* This will determine which components are visibly listed once the form is submitted */
   tasklistElem.appendChild(item);
   form.reset();
 
@@ -40,7 +40,7 @@ function displayTask(task) {
 
 var taskList = [];
 
-function addTask(name, platform, rate, time, replay, like) {
+function addTask(name, platform, time, rate, replay, like) {
 
   // here I created the object, directly passing in the input parameters
   let task = {
@@ -48,8 +48,8 @@ function addTask(name, platform, rate, time, replay, like) {
     platform,
     id: Date.now(),
     date: new Date().toISOString(),
-    rate,
     time,
+    rate,
     replay,
     like
   }

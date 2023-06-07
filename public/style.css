@@ -1,32 +1,67 @@
 html {
-    height: 100%;
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-                  
-  header > h1 {
-    text-align: center;
-  }
-                  
-  form {
-    max-width: 500px;
-    margin: 0 auto;
-    border: 2px solid grey;
-    padding: 2em 1em;
-  }
-                  
-  .form-row {
-    display: flex;
-    justify-content: flex-end;
-    padding: .5em;
-  }
-                  
-  .form-row > label {
-    width: 100px;
-  }
-                  
-  .form-row > input,
-  .form-row > select {
-    padding: .5em;
-    flex-grow: 1;
-  }
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+                
+header > h1 {
+  text-align: center;
+}
+                
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  border: 2px solid grey;
+  padding: 2em 1em;
+}
+                
+.form-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: .5em;
+}
+                
+.form-row > label {
+  width: 100px;
+}
+                
+.form-row > input,
+.form-row > select {
+  padding: .5em;
+  flex-grow: 1;
+}
+
+/* CSS */
+.gameRating {
+display: inline-block;
+}
+
+.gameRating input {
+display: none;
+}
+
+.gameRating label {
+font-size: 30px;
+color: #ccc;
+cursor: pointer;
+}
+
+.gameRating label:before {
+content: '\2605';
+}
+
+.gameRating input:checked ~ label {
+color: #ffdd00; /* Change to your desired color */
+}
+
+.gameRating label:hover:before,
+.gameRating label:hover ~ label:before {
+content: '\2605';
+color: #ffdd00; /* Change to your desired color */
+}
+
+.starRating {
+font-size: 30px;
+color: #ccc;
+padding: .5em;
+}

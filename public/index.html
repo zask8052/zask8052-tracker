@@ -30,8 +30,16 @@
         <input type="number" name="gameHours" id="gameHours" required="true" />
       </div>
       <div class="form-row">
-        <label for="gameRating">Rating</label>
-        <input type="number" name="gameRating" id="gameRating" required="true" />
+        <div class="starRating">
+      <label for="starRating">Rating</label> </div>
+        <div class="gameRating">
+        <!-- HTML -->
+  <input type="radio" id="star5" name="gameRating" value="5" /><label for="star5"></label>
+  <input type="radio" id="star4" name="gameRating" value="4" /><label for="star4"></label>
+  <input type="radio" id="star3" name="gameRating" value="3" /><label for="star3"></label>
+  <input type="radio" id="star2" name="gameRating" value="2" /><label for="star2"></label>
+  <input type="radio" id="star1" name="gameRating" value="1" /><label for="star1"></label>
+        </div>
       </div>
       <div class="form-row">
         <label for="gameReplay">Replayed?</label>
