@@ -8,18 +8,18 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,900;1,500;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,900;1,500;1,900&display=swap" rel="stylesheet"> <!-- Fonts imported from Google Fonts -->
   
 </head>
 <body>
     <header><h1>Your Diary</h1></header>
-    <form id="taskform">
+    <form id="taskform"> <!-- This 'form' acts as the basis for the right side of the screen, the form where inputs are made by the user -->
       <div class="form-row">
-        <div class="inputTitle">
-        <div class="rectangleTitle"></div>
-        <div class="titleFont">
-        <label for="gameTitle">Game Title</label> </div>
-        <input type="text" name="gameTitle" id="gameTitle" required="true" /> </div>
+        <div class="inputTitle"> <!-- Each form input has a different variation of div, all matching besides for the 'rating' portion. For example, "inputTitle", "inputHours", "selectPlatform", etc. This was done in order to streamline CSS styling for each element individually. -->
+        <div class="rectangleTitle"></div> <!-- This div (and the others like it) were all made to control the rectangles in the backgrounds of each input area-->
+        <div class="titleFont"> <!-- Similar to above, this div (and the others like it) were all made to control the font of each input's title -->
+        <label for="gameTitle">Game Title</label> </div> <!-- 'label' element was used here for accessibility purposes, due to ease of access for screenreaders, and was utilised similarly to the variations of divs above. -->
+        <input type="text" name="gameTitle" id="gameTitle" required="true" /> </div> <!-- multiple differing input and select types were used for the form, to best suit each category, and all are "required=true" in order to submit. -->
       </div>
       <div class="form-row">
         <div class="selectPlatform">
@@ -47,7 +47,7 @@
         <div class="starRating">
       <label for="starRating">Rating</label> </div>
         <div class="gameRating">
-  <input type="radio" id="star5" name="gameRating" value="5" /><label for="star5"></label>
+  <input type="radio" id="star5" name="gameRating" value="5" /><label for="star5"></label> <!-- This code is for the star rating visual, which can be clicked. It is a radio type of input. -->
   <input type="radio" id="star4" name="gameRating" value="4" /><label for="star4"></label>
   <input type="radio" id="star3" name="gameRating" value="3" /><label for="star3"></label>
   <input type="radio" id="star2" name="gameRating" value="2" /><label for="star2"></label>
@@ -76,14 +76,14 @@
           <option value="Dislike">Dislike</option>
         </select> </div>
       </div>
-      <div class="form-row">
+      <div class="form-row"> <!-- form submission button. -->
         <div class="inputSubmit">
         <div class="rectangleSubmit"></div>
         <input type="submit"/> </div>
       </div>
     </form>
   
-    <!-- Tasklist -->
+    <!-- Diary List, or 'tasklist' for the submitted forms on the left-hand side of the site. -->
   <div class="tasklistBorder">
     <ul id="tasklist"></ul>
     <script src="script.js"></script>
