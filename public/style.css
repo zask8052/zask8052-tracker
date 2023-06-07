@@ -10,6 +10,7 @@ header > h1 {
   padding-left: 5%;
   padding-top: 1.5%;
   font-family: 'Fraunces', serif;
+  font-size: 50px;
 }
                 
 form {
@@ -41,6 +42,7 @@ form {
 padding-top: 7%;
 position:absolute; left:80px; top:20px;
 font-family: 'Fraunces', serif;
+font-size: 20px;
 }
 
 /* Game Title */
