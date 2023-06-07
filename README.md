@@ -1,6 +1,6 @@
 # zask8052-tracker
 
-My name is Zander, and in this README file, I will document my process in creating my Web Design Prototype, based on the Design Prompt of 'Media Consumption'. For this prompt, I chose to create a 'Video Game Review' data tracking application. In order to run my site on the local server I have created, please type in the console "npm run start", then in a browser, go to: http://localhost:8888 . This will activate the server.
+My name is Zander, and in this README file, I will document my process in creating my Web Design Prototype, based on the Design Prompt of 'Media Consumption'. For this prompt, I chose to create a 'Video Game Review' data tracking application. In order to run my site on the local server I have created, please type in the console "npm run start", then in a browser, go to: http://localhost:8888 . This will activate the server. When finished, close the server (CTRL + C for VSCode).
 
 Firstly, I went through the process of creating a repository, utilising GitHub and Node.js to set it up. I followed the in-class instructions, only coming across one issue, being that the local server was not connecting, which was swiftly fixed once I asked the tutor for assistance.
 
