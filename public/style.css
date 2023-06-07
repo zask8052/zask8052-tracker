@@ -38,6 +38,7 @@ form {
   max-width: 300px;
 }
 
+/* determines where the tasklist is located on screen */
 .tasklistBorder {
 padding-top: 7%;
 position:absolute; left:80px; top:20px;
@@ -53,6 +54,39 @@ padding-right: 1em;
 position: relative; bottom: 20px;
 }
 
+/* What Platform? */
+.platformFont label {
+  font-size: 30px;
+  color: #ffffff;
+  padding-right: 1em;
+  position: absolute; top: 105px;
+  }
+  
+  /* Hours Played? */
+  .hoursFont label {
+  font-size: 30px;
+  color: #ffffff;
+  padding-right: 1.6em;
+  position: absolute; top: 205px;
+  }
+  
+  /* Replayed? */
+  .replayFont label {
+  font-size: 20px;
+  color: #ffffff;
+  padding-right: 1em;
+  position: absolute; top: 290px; right: 295px;
+  }
+  
+  /* Like/Dislike? */
+  .likeFont label {
+  font-size: 20px;
+  color: #ffffff;
+  padding-right: 1em;
+  position: absolute; top: 290px; right: 30px;
+  }
+
+/* determines rectangle dimensions and colour */
 .rectangleTitle {
 width: 100%; 
 height: 75px; 
@@ -63,12 +97,14 @@ left: 0;
 z-index: -1;
 }
 
+/* determines input/select box dimensions and colour */
 .inputTitle > input {
 padding: .5em;
 max-width: 300px;
 position: absolute; right:50px; top:20px;
 }
 
+/* determines rectangle dimensions and colour */
 .rectanglePlatform {
 width: 100%; 
 height: 100px; 
@@ -79,12 +115,14 @@ left: 0;
 z-index: -1;
 }
 
+/* determines input/select box dimensions and colour */
 .selectPlatform > select {
 padding: .5em;
 max-width: 300px;
 position: absolute; right:75px; top:105px;
 }
 
+/* determines rectangle dimensions and colour */
 .rectangleHours {
 width: 100%; 
 height: 100px; 
@@ -95,12 +133,14 @@ left: 0;
 z-index: -1;
 }
 
+/* determines input/select box dimensions and colour */
 .inputHours > input {
 padding: .5em;
 max-width: 300px;
 position: absolute; right:50px; top:210px;
 }
 
+/* determines rectangle dimensions and colour */
 .rectangleRating {
 width: 50%; 
 height: 112px; 
@@ -111,6 +151,7 @@ left: 0;
 z-index: -1;
 }
 
+/* determines rectangle dimensions and colour */
 .rectangleReplay {
 width: 75%; 
 height: 112px; 
@@ -121,12 +162,14 @@ left: 0;
 z-index: -2;
 }
 
+/* determines input/select box dimensions and colour */
 .selectReplay > select {
 padding: .5em;
 max-width: 300px;
 position: absolute; right: 300px; top: 325px;
 }
 
+/* determines rectangle dimensions and colour */
 .rectangleLike {
 width: 100%; 
 height: 112px;  
@@ -137,12 +180,14 @@ left: 0;
 z-index: -3;
 }
 
+/* determines input/select box dimensions and colour */
 .selectLike > select {
 padding: .5em;
 max-width: 300px;
 position: absolute; right: 50px; top: 325px;
 }
 
+/* determines rectangle dimensions and colour */
 .rectangleSubmit {
 width: 100%; 
 height: 50px; 
@@ -153,43 +198,14 @@ left: 0;
 z-index: -1;
 }
 
+/* determines input/select box dimensions and colour */
 .inputSubmit > input {
 padding: .5em;
 max-width: 300px;
 position: absolute; right:50%; top:395px;
 }
 
-/* What Platform? */
-.platformFont label {
-font-size: 30px;
-color: #ffffff;
-padding-right: 1em;
-position: absolute; top: 105px;
-}
 
-/* Hours Played? */
-.hoursFont label {
-font-size: 30px;
-color: #ffffff;
-padding-right: 1.6em;
-position: absolute; top: 205px;
-}
-
-/* Replayed? */
-.replayFont label {
-font-size: 20px;
-color: #ffffff;
-padding-right: 1em;
-position: absolute; top: 290px; right: 295px;
-}
-
-/* Like/Dislike? */
-.likeFont label {
-font-size: 20px;
-color: #ffffff;
-padding-right: 1em;
-position: absolute; top: 290px; right: 30px;
-}
 
 /* Below is the CSS for the star rating on the form, ending at '.starRating' */
 .gameRating {
@@ -228,14 +244,7 @@ padding: .5em;
 position: relative; top: 167px; left: 65px;
 }
 
-
-
-
-
-
-
-
-
+/* media query for mobile */
 
 @media(max-width: 700px){
   header > h1 {
@@ -271,11 +280,12 @@ form {
   max-width: 300px;
 }
 
+/* determines where the tasklist is located on screen */
 .tasklistBorder {
 padding-top: 7%;
 position:absolute; left:80px; top:20px;
 font-family: 'Fraunces', serif;
-font-size: 10px;
+font-size: 20px;
 }
 
 /* Game Title */
@@ -286,6 +296,39 @@ padding-right: 1em;
 position: relative; bottom: 20px;
 }
 
+/* What Platform? */
+.platformFont label {
+  font-size: 30px;
+  color: #ffffff;
+  padding-right: 1em;
+  position: absolute; top: 105px;
+  }
+  
+  /* Hours Played? */
+  .hoursFont label {
+  font-size: 30px;
+  color: #ffffff;
+  padding-right: 1.6em;
+  position: absolute; top: 205px;
+  }
+  
+  /* Replayed? */
+  .replayFont label {
+  font-size: 20px;
+  color: #ffffff;
+  padding-right: 1em;
+  position: absolute; top: 290px; right: 295px;
+  }
+  
+  /* Like/Dislike? */
+  .likeFont label {
+  font-size: 20px;
+  color: #ffffff;
+  padding-right: 1em;
+  position: absolute; top: 290px; right: 30px;
+  }
+
+/* determines rectangle dimensions and colour */
 .rectangleTitle {
 width: 100%; 
 height: 75px; 
@@ -296,12 +339,14 @@ left: 0;
 z-index: -1;
 }
 
+/* determines input/select box dimensions and colour */
 .inputTitle > input {
 padding: .5em;
 max-width: 300px;
 position: absolute; right:50px; top:20px;
 }
 
+/* determines rectangle dimensions and colour */
 .rectanglePlatform {
 width: 100%; 
 height: 100px; 
@@ -312,12 +357,14 @@ left: 0;
 z-index: -1;
 }
 
+/* determines input/select box dimensions and colour */
 .selectPlatform > select {
 padding: .5em;
 max-width: 300px;
 position: absolute; right:75px; top:105px;
 }
 
+/* determines rectangle dimensions and colour */
 .rectangleHours {
 width: 100%; 
 height: 100px; 
@@ -328,12 +375,14 @@ left: 0;
 z-index: -1;
 }
 
+/* determines input/select box dimensions and colour */
 .inputHours > input {
 padding: .5em;
 max-width: 300px;
 position: absolute; right:50px; top:210px;
 }
 
+/* determines rectangle dimensions and colour */
 .rectangleRating {
 width: 50%; 
 height: 112px; 
@@ -344,6 +393,7 @@ left: 0;
 z-index: -1;
 }
 
+/* determines rectangle dimensions and colour */
 .rectangleReplay {
 width: 75%; 
 height: 112px; 
@@ -354,12 +404,14 @@ left: 0;
 z-index: -2;
 }
 
+/* determines input/select box dimensions and colour */
 .selectReplay > select {
 padding: .5em;
 max-width: 300px;
 position: absolute; right: 300px; top: 325px;
 }
 
+/* determines rectangle dimensions and colour */
 .rectangleLike {
 width: 100%; 
 height: 112px;  
@@ -370,12 +422,14 @@ left: 0;
 z-index: -3;
 }
 
+/* determines input/select box dimensions and colour */
 .selectLike > select {
 padding: .5em;
 max-width: 300px;
 position: absolute; right: 50px; top: 325px;
 }
 
+/* determines rectangle dimensions and colour */
 .rectangleSubmit {
 width: 100%; 
 height: 50px; 
@@ -386,43 +440,14 @@ left: 0;
 z-index: -1;
 }
 
+/* determines input/select box dimensions and colour */
 .inputSubmit > input {
 padding: .5em;
 max-width: 300px;
 position: absolute; right:50%; top:395px;
 }
 
-/* What Platform? */
-.platformFont label {
-font-size: 30px;
-color: #ffffff;
-padding-right: 1em;
-position: absolute; top: 105px;
-}
 
-/* Hours Played? */
-.hoursFont label {
-font-size: 30px;
-color: #ffffff;
-padding-right: 1.6em;
-position: absolute; top: 205px;
-}
-
-/* Replayed? */
-.replayFont label {
-font-size: 20px;
-color: #ffffff;
-padding-right: 1em;
-position: absolute; top: 290px; right: 295px;
-}
-
-/* Like/Dislike? */
-.likeFont label {
-font-size: 20px;
-color: #ffffff;
-padding-right: 1em;
-position: absolute; top: 290px; right: 30px;
-}
 
 /* Below is the CSS for the star rating on the form, ending at '.starRating' */
 .gameRating {
