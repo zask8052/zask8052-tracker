@@ -8,6 +8,6 @@ After this I began building the website's structure using HTML. I first looked a
 
 ![High-Fidelity Site Design](/doc-images/High%20Fidelity.png)
 
-In this design, I chose to utilise a number of various data models, which I aimed to include this website. These data models included:
+In this design, I chose to utilise a number of various data models, which I aimed to include in this website. These data models are shown in this table:
 
-![High-Fidelity Site Design](/doc-images/data-model.png)
+![Data Model](/doc-images/data-model.png)
